@@ -1,6 +1,5 @@
 import React from 'react';
 import styleContainer from "../Common/styles/Container.module.css";
-import Project from "../projects/project/project";
 import style from '../contacts/Contacts.module.css'
 
 
