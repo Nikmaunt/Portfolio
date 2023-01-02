@@ -15,7 +15,7 @@ const Contacts = () => {
                        <input className={style.input}  type="text"/>
                        <textarea className={style.textarea}/>
                    </form>
-                    <button className={style.contactButton}> Send message </button>
+                    <button className={style.contactButton} type={"submit"}> Send message </button>
                 </div>
             </div>
         </div>

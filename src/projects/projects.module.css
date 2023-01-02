@@ -1,17 +1,29 @@
+
 .projectsBlock{
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background-color: lightgreen;
+    background-color: #1f1f20;
 
 }
 
 .projectsContainer{
-
     flex-direction: column;
     justify-content: flex-start;
 }
 
 .title{
     background-color: burlywood;
+    margin-bottom: 30px;
+}
+
+.title h2{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    font-weight:300 ;
+    color: white;
+    text-transform: capitalize;
+    font-size: 36px;
+    line-height: 1.2;
 }
 
 .projects {
@@ -22,3 +34,8 @@
     flex-wrap: wrap;
 }
 
+@media screen and (max-width:  1129px){
+    .projects {
+        justify-content: center;
+    }
+}
