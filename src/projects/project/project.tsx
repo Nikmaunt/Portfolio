@@ -1,20 +1,28 @@
 import React from 'react';
 
 import style from './/project.module.css'
+import {backgroundType} from "../projects";
+
+
 
 type ProjectType ={
     description:string
     projectName:string
+    style: backgroundType
 }
+
 
 const Project = (props:ProjectType) => {
     return (
         <div className={style.project}>
-              <div className={style.projectImg}>
+              <div className={style.projectImg} style={props.style}>
                   <div><button className={style.buttonLink}> Link </button></div>
               </div>
-              <h3> {props.projectName} </h3>
-            <span className={style.description}>{props.description} </span>
+            <div className={style.projectInfo}>
+                <h3 className={style.projectTitle}> {props.projectName} </h3>
+                <span className={style.description}>{props.description} </span>
+            </div>
+
         </div>
     );
 };
